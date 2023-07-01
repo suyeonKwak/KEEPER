@@ -1,0 +1,63 @@
+#video_container{
+    width:60%;
+    height: 53%;
+    margin-top: 2.5%;
+    margin-bottom: 3%;
+
+}
+#video_container video{
+    height:100%;
+    width:100%;
+}
+
+#content3{
+    display: flex;
+    flex-direction:column;
+    width:52vw;
+    height: 70vh;
+    margin-top: 17vh;
+    color: white;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#content3::before {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: -20%;
+    display: block;
+    width: 130%;
+    height: 150%;
+    z-index: 0;    
+    animation: rotatediv 10s infinite linear;   
+    background-image: linear-gradient(to right,rgba(47, 47, 47, 0.7), rgba(58, 58, 58, 0.485)), linear-gradient(to right, rgba(0, 0, 0, 0.8), rgb(34, 34, 34)); /* 그라디언트 방향 변경 및 연하게 설정 */
+}
+  
+  @keyframes rotatediv {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+#content3::after{
+    content:'';
+    position: absolute;
+    z-index: 1; 
+    top:4px;
+    left:4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background:  linear-gradient(180deg, #3B3B3B 0%, #151515 100%);
+}
+
+#content3 *{
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+   
+}

@@ -1,0 +1,115 @@
+.page1video{ 
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.btn2:hover{
+    border:2px solid white;
+    background-color: rgba(198, 198, 198, 0.8);
+    cursor:pointer;
+    
+} 
+.btn2:active{
+    background-color: rgba(255,255,255, 0.2);
+    border:1px solid white;
+    color: white;
+}   
+.btn2{
+    width:530px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.8);   
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    border:none;
+    font-size: 1rem;
+    margin-top: 15px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.73);
+}
+#logoimg{
+    position:fixed;
+    margin-left: 53px;
+    width:129px;
+    top: 0px;}
+
+.stepimg{
+    position:fixed;
+    width: 17px;
+    height: 296px;
+    left: 96px;
+    top: 33.6vh;
+
+}
+#content2{
+    padding-top: 8px;
+    flex-direction:column;
+    width:55vw;
+    margin-top: 15vh;
+    color: white;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadein 3s;
+	-webkit-animation: fadein 3s; /* Safari and Chrome */
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.btn:hover{
+    border:1px solid white;
+    cursor:pointer;
+} 
+.btn:active{
+    background-color: rgba(55, 55, 55, 0.25);
+    border:1px solid white;
+}   
+.btn{
+    width:450px;
+    height: 54px;
+    background: rgba(255, 255, 255, 0.2);   
+    color: white;
+    border-radius: 10px;
+    border:none;
+    font-size: 1rem;
+    margin-top: 40px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.73);
+}
+.title{
+    letter-spacing: 0.05em;
+    font-size: 1.9rem;
+    font-weight: bold;
+    
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px){
+    .stepimg{
+        position: absolute;
+        width: 15px;
+        height: 340px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 66%;
+        transform: rotate(-90deg);
+    }
+  } 

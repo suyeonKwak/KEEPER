@@ -1,0 +1,54 @@
+#uploadfile.loading{
+    cursor: wait;
+}
+#upload_p1::before {
+    content: "파일을 첨부하거나 드래그해주세요";
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+#upload_p2{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+}
+#upload_p2 span{
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#fileimg{
+    height: 11vh;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+}
+.video{
+	position: absolute;
+	width:400vw;
+	height: 400vh;
+	top:-400px;
+	left:-1500px;
+	opacity: 40%;
+}
+
+
+/*로딩 애니메이션*/
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .spinner-container {
+    padding-top: 3.5vh;
+    padding-bottom: 14vh;
+  }
+  
+  .spinner {
+    animation: spin 2s linear infinite; 
+    width: 70px;
+    height: 70px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid rgb(69, 69, 69);
+    border-radius: 50%;
+    margin: 0 auto;
+  }
